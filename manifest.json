@@ -1,0 +1,23 @@
+{
+  "name": "KagamiMochi Extension",
+  "description": "Hello World ><",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "js/background_script.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.syosetu.com/*"
+      ],
+      "js": [
+        "js/syosetu.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "history"
+  ]
+}
