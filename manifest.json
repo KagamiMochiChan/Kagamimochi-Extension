@@ -14,6 +14,14 @@
       "js": [
         "js/syosetu.js"
       ]
+    },
+    {
+      "matches": [
+        "*://developer.mozilla.org/*"
+      ],
+      "js": [
+        "js/mozilla.js"
+      ]
     }
   ],
   "permissions": [
